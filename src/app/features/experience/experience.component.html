@@ -1,0 +1,81 @@
+<section class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <!-- Section Header -->
+    <div class="flex flex-col items-center text-center mb-16">
+      <h2 class="text-3xl font-semibold text-gray-800 tracking-tight">Experience</h2>
+      <div class="w-12 h-1 bg-blue-600 rounded-full mt-4"></div>
+      <p class="text-gray-500 mt-4 max-w-xl">
+        My professional journey in enterprise software development.
+      </p>
+    </div>
+
+    <!-- Timeline -->
+    <div class="relative flex flex-col gap-0">
+
+      <!-- Vertical Line -->
+      <div class="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-gray-200 transform md:-translate-x-1/2"></div>
+
+      @for (exp of experiences; track exp.company; let i = $index) {
+        <div class="relative flex flex-col md:flex-row gap-8 pb-12">
+
+          <!-- Timeline Dot -->
+          <div class="absolute left-0 md:left-1/2 w-3 h-3 bg-blue-600 rounded-full transform -translate-x-1 md:-translate-x-1.5 mt-1.5"></div>
+
+          <!-- Left side — Period (desktop only) -->
+          <div class="hidden md:flex md:w-1/2 md:justify-end md:pr-12">
+            @if (i % 2 === 0) {
+              <div class="flex flex-col items-end gap-1 pt-0.5">
+                <span class="text-sm font-medium text-blue-600">{{ exp.period }}</span>
+                <span class="text-xs text-gray-400">{{ exp.location }}</span>
+              </div>
+            }
+          </div>
+
+          <!-- Right side — Content -->
+          <div class="md:w-1/2 pl-8 md:pl-12"
+            [class.md:pl-12]="i % 2 === 0"
+            [class.md:pr-12]="i % 2 !== 0"
+            [class.md:pl-0]="i % 2 !== 0">
+
+            <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 flex flex-col gap-4">
+
+              <!-- Role and Company -->
+              <div class="flex flex-col gap-1">
+                <h3 class="text-gray-800 font-medium">{{ exp.role }}</h3>
+                <span class="text-blue-600 text-sm font-medium">{{ exp.company }}</span>
+                <!-- Mobile period -->
+                <span class="md:hidden text-xs text-gray-400">{{ exp.period }} · {{ exp.location }}</span>
+              </div>
+
+              <!-- Divider -->
+              <div class="w-full h-px bg-gray-200"></div>
+
+              <!-- Description -->
+              <ul class="flex flex-col gap-2">
+                @for (point of exp.description; track point) {
+                  <li class="flex items-start gap-2 text-sm text-gray-500 leading-relaxed">
+                    <span class="text-blue-400 mt-1 text-xs">▸</span>
+                    {{ point }}
+                  </li>
+                }
+              </ul>
+
+              <!-- Tech Chips -->
+              <div class="flex flex-wrap gap-2 pt-2">
+                @for (tech of exp.tech; track tech) {
+                  <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">
+                    {{ tech }}
+                  </span>
+                }
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      }
+
+    </div>
+  </div>
+</section>
