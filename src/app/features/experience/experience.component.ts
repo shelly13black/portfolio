@@ -21,39 +21,52 @@ export class ExperienceComponent {
   experiences: Experience[] = [
     {
       role: 'Senior Java Developer',
-      company: 'Company Name',
-      period: '2022 — Present',
+      company: 'First National Bank',
+      period: 'August 2024 — Present',
       location: 'Johannesburg, South Africa',
       description: [
-        'Developed and maintained enterprise-grade microservices using Spring Boot and Java 17.',
-        'Collaborated with cross-functional teams to deliver features in an Agile environment.',
-        'Improved system performance by 30% through query optimisation and caching strategies.',
+        'Working on a system used for scoring home loans. The scoring process involves validation, data orchestration, data defaulting, scoring, affordability, policy rules, lending strategy and pricing.',
+        'Building new features based on new business requiremnts, technical debt abd documentation.',
+        'Code reviews to ensure all standards are being followed. Production support.',
       ],
-      tech: ['Java', 'Spring Boot', 'Microservices', 'PostgreSQL', 'Docker']
+      tech: ['Java', 'Spring Boot', 'Microservices', 'PostgreSQL']
     },
     {
-      role: 'Java Developer',
-      company: 'Previous Company',
-      period: '2020 — 2022',
+      role: 'Senior Java Developer',
+      company: 'WesBank',
+      period: 'Decemeber 2021 — July 2024',
       location: 'Johannesburg, South Africa',
       description: [
-        'Built and maintained RESTful APIs consumed by Angular frontend applications.',
-        'Worked with JPA and Hibernate for database interactions and schema management.',
-        'Participated in code reviews and contributed to improving team coding standards.',
+        'Migrating the system from cloud to on premise servers to adhere bank standards. Moving from subversion to bitbucket and from using using Jenkins to bmaboo for deployments.',
+        'Decoupling the existing monolith system into standalone Spring boot modules, to ensure that all components function independently and can be deployed individually without needing multiple projects to be running at the same time.',
+        'Assisting partners with integrating with the system to able to use our services on their websites.',
+        'Providing support to new hires, onboarding and system walkthroughs and KYT sessions.'
       ],
       tech: ['Java', 'Spring Boot', 'Angular', 'MySQL', 'JPA', 'Hibernate']
     },
     {
+      role: 'Java Developer',
+      company: 'First National Bank',
+      period: 'Decemeber 2020 – November 2021',
+      location: 'Johannesburg, South Africa',
+      description: [
+        'Supporting a system which is in the process of being switched off. Investigating and fixing any production issues that occur on the system.',
+        'Code reviews and production support',
+      ],
+      tech: ['Java', 'Java EE', 'JUnit', 'Mockito', 'Jira']
+    },
+    {
       role: 'Junior Java Developer',
-      company: 'First Company',
+      company: 'WesBank',
       period: 'February 2018 – November 2020',
       location: 'Johannesburg, South Africa',
       description: [
-        'Assisted in development of internal enterprise applications using Java EE.',
-        'Wrote unit tests using JUnit and Mockito to ensure code quality.',
-        'Gained experience working in Agile teams using Jira and Azure DevOps.',
+        'Worked on FastTrack (https://fasttrack.wesbank.co.za/). Using microservices and Spring boot to update the existing monolith services.',
+        'Built a new system, using spring-boot, which integrates existing FastTrack services into a system which is used by dealers.',
+        'Created an Admin system which will be used to handle/fix system error that occur on FastTrack using angular for the frontend.',
+        'Gained experience working in Agile teams using Jira and Jenkins.',
       ],
-      tech: ['Java', 'Java EE', 'JUnit', 'Mockito', 'Jira']
+      tech: ['Java', 'Spring-boot', 'JUnit', 'Mockito', 'Jira']
     },
   ];
 }

@@ -13,27 +13,27 @@ export class SkillsComponent {
     {
       category: 'Languages',
       icon: '< >',
-      skills: ['Java', 'TypeScript', 'JavaScript', 'SQL', 'HTML', 'SCSS']
+      skills: ['Java', 'TypeScript', 'Python', 'SQL', 'Angular']
     },
     {
       category: 'Frameworks & Libraries',
       icon: '{ }',
-      skills: ['Spring Boot', 'Angular', 'RxJS', 'Hibernate', 'JPA', 'Maven']
+      skills: ['Spring Boot', 'Angular', 'Hibernate', 'JPA', 'Maven', 'JUNIT 5']
     },
     {
       category: 'Databases',
       icon: '[ ]',
-      skills: ['PostgreSQL', 'MySQL', 'Oracle', 'H2']
+      skills: ['PostgreSQL', 'MySQL', 'H2']
     },
     {
       category: 'Tools & Platforms',
       icon: '⚙',
-      skills: ['Git', 'GitHub', 'Docker', 'Jenkins', 'Jira', 'Azure DevOps']
+      skills: ['Git', 'Docker', 'Jenkins', 'Jira', 'Bitbucket', 'Bamboo']
     },
     {
       category: 'Architecture & Methodologies',
       icon: '◈',
-      skills: ['Microservices', 'REST APIs', 'Agile', 'Scrum', 'SOLID Principles', 'Design Patterns']
+      skills: ['Microservices', 'REST APIs', 'Agile', 'Scrum']
     },
   ];
 }

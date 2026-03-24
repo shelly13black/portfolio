@@ -31,9 +31,7 @@ export class ContactComponent {
   isError = false;
 
   contactDetails = [
-    { label: 'Email', value: 'your.email@gmail.com', icon: '✉' },
-    { label: 'LinkedIn', value: 'linkedin.com/in/yourprofile', icon: '🔗' },
-    { label: 'GitHub', value: 'github.com/yourusername', icon: '⌥' },
+    { label: 'Email', value: 'undertheshade2014@gmail.com', icon: '✉' },
     { label: 'Location', value: 'Johannesburg, South Africa', icon: '📍' },
   ];
 
