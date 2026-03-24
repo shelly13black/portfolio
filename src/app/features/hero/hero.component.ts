@@ -12,5 +12,5 @@ export class HeroComponent {
   name = 'Shelly Mashilo';
   title = 'Java Developer';
   subtitle = 'Add a one liner about what you do';
-  cvLink = '/assets/cv.pdf';
+  cvLink = '/assets/SHELLY MASHILO.pdf';
 }
